@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link href="./payment.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- top with company logo and billing info and address -->
+    <billing-info-section class="billing_info">
+      <div class="container">
+        <div class="row">
+          <!-- company logo -->
+          <div class="col-12 col-md-4 mt-3 mb-md-3">
+            <img
+              src="./asset/footer linkedin.png"
+              alt="placeholder"
+              style="
+                background-color: black;
+                border: 2px solid red;
+                width: 10rem;
+                margin-bottom: 1rem;
+              "
+            />
+            <h5>Order:</h5>
+            <h6>Number:</h6>
+            <h6>Date:</h6>
+            <h6>Expiry date:</h6>
+          </div>
+          <!-- billing address and name -->
+          <div class="col-12 col-md-3 offset-md-5 text-md-end">
+            <div>
+              <h5 class="mt-md-5 mt-1">Billing info:</h5>
+              <h6>company name</h6>
+              <h6>costumer name</h6>
+              <h6>31-AmGovindpuri-H,swej Farm 302019 jaupur IN</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </billing-info-section>
+    <!-- table in middle -->
+    <subscription-info-section>
+      <div class="container">
+        <div class="row">
+          <div class="col table-responsive">
+            <table
+              class="table table-responsive table-hover table-striped table-bordered border-secondary"
+            >
+              <thead>
+                <tr class="table-primary">
+                  <th scope="col"></th>
+                  <th scope="col" colspan="2">Subscription</th>
+                  <th scope="col">Domain</th>
+                  <th scope="col">Quantity</th>
+                  <th scope="col">Unit price</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row"></th>
+                  <td colspan="2">[Europe Additional IPv4 block /28 RIPE</td>
+                  <td>ip-176.31.207.160/28</td>
+                  <td>1</td>
+                  <td>$22.40 USD</td>
+                  <td>$22.40 USD</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td colspan="5" class="text-end">Tax</td>
+                  <td>$22.40 USD</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td colspan="5" class="text-end">Sub-total</td>
+                  <td>$22.40 USD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- showing total price -->
+          <div class="col-12 table-responsive">
+            <table
+              class="table table-hover table-striped table-bordered border-secondary"
+            >
+              <tbody>
+                <tr class="table-primary">
+                  <th scope="row"></th>
+                  <td colspan="12" class="fw-bold">Total</td>
+                  <th scope="col" colspan="12"></th>
+
+                  <td class="text-end">$22.40 USD</td>
+                  <td scope="col"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </subscription-info-section>
+    <!-- payment options like paypal visa etc.. -->
+    <payment-options-section>
+      <!-- instant activation -->
+      <div style="margin: auto">
+        <div class="container payment-options-section">
+          <div class="row">
+            <div
+              class="col-sm-5 col-md-3 pt-3 mt-3"
+              style="border: 1px solid gray; height: 14rem"
+            >
+              <br />
+              <h6 style="border-bottom: 2px dotted gray">instant activation</h6>
+              <br />
+              <a style="cursor: pointer" href="">
+                <img src="./asset/visa.png" style="width: 20%" />
+                <img src="./asset/master-card.png" style="width: 20%" />
+                <img src="./asset/american-express.png" style="width: 20%" />
+                <img style="width: 20%" src="./asset/discover.png" />
+              </a>
+            </div>
+
+            <!-- this is for creating payment receipt -->
+
+            <div
+              class="col-sm-5 col-md-3 pt-3 mt-3"
+              style="border: 1px solid gray; height: 14rem"
+            >
+              <br />
+              <h6 style="border-bottom: 2px dotted gray">instant activation</h6>
+              <br />
+              <a style="cursor: pointer" href="">
+                <img
+                  class="one-img"
+                  src="./asset/pngegg.png"
+                  style="width: 110%"
+                />
+              </a>
+            </div>
+
+            <!-- cashfree logo -->
+            <div
+              class="col-sm-5 col-md-3 pt-3 mt-3"
+              style="border: 1px solid gray; height: 14rem"
+            >
+              <br />
+              <h6 style="border-bottom: 2px dotted gray">instant activation</h6>
+              <br />
+              <a style="cursor: pointer" href="">
+                <img
+                  class="one-img"
+                  src="./asset/cashfree-payments-seeklogo.com.svg"
+                  style="width: 90%"
+                />
+              </a>
+            </div>
+            <!-- Bank transfer -->
+            <div
+              class="col-sm-5 col-md-3 pt-2 mt-3"
+              style="border: 1px solid gray; height: 14rem"
+            >
+              <br />
+              <h6 style="border-bottom: 2px dotted gray">
+                Create payment receipt.
+              </h6>
+              <br />
+              <a style="cursor: pointer" href="">
+                <img
+                  class="one-img"
+                  src="./asset/pngwing.com.png"
+                  style="width: 100%"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </payment-options-section>
+    <!-- details on bottom -->
+    <footer>
+      <div class="container mt-5">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+          impedit tempore dicta numquam natus porro sint iste aperiam maxime
+          tenetur omnis excepturi reiciendis provident veniam odio, doloribus,
+          minus amet, ea aliquid voluptatibus ducimus architecto molestiae
+          temporibus dignissimos? Corrupti, nemo. Illo deleniti fugit facere
+          incidunt veniam tenetur accusamus, odio quisquam quam!
+        </p>
+      </div>
+    </footer>
+    <!-- bootstrap.com link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
